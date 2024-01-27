@@ -1,0 +1,43 @@
+.calculator{
+    background-color: hsl(0, 0%, 40%);
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+
+.display{
+    height: 40px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 10px;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+}
+
+.buttons-bottom{
+    display: flex;
+}
+
+.operators{
+    display: flex;
+}
+
+.operators-right{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.numbers{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+button{
+    flex: 1;
+    min-width: 50px;
+    min-height: 50px;
+}

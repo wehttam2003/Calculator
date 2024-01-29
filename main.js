@@ -26,3 +26,17 @@ function operate(a,operator,b){
     }
 
 }
+
+const calcDisplay = document.querySelector(".display");
+const calcButtons = document.querySelectorAll("button");
+
+function populateDisplay(e){
+    let cName = e.target.className
+    let buttonValue = e.target.firstChild.data
+    if (cName == "number" | cName == "operator"){
+        calcDisplay.textContent += buttonValue
+    }
+}
+Array.from(calcButtons).forEach( (button)=> button.addEventListener( "click", populateDisplay));
+
+//STORE WHAT IS IN THE DISPLAY IN A VARIABLE

@@ -28,7 +28,9 @@ function operate(a,operator,b){
 }
 
 const calcDisplay = document.querySelector(".display");
-const calcButtons = document.querySelectorAll("button");
+const calcNumberButtons = document.querySelectorAll("button");
+const calcEqualButton = document.querySelector(".equal");
+const calcClearButton = document.querySelector(".clear")
 
 function populateDisplay(e){
     let cName = e.target.className
@@ -37,6 +39,7 @@ function populateDisplay(e){
         calcDisplay.textContent += buttonValue
     }
 }
-Array.from(calcButtons).forEach( (button)=> button.addEventListener( "click", populateDisplay));
 
-//STORE WHAT IS IN THE DISPLAY IN A VARIABLE
+Array.from(calcNumberButtons).forEach( (button)=> button.addEventListener( "click", populateDisplay));
+
+calcClearButton.addEventListener("click", () => calcDisplay.textContent = "")

@@ -1,8 +1,17 @@
+body{
+    display: flex;
+    justify-content: center;
+    background-color: hsl(191, 18%, 77%);
+    caret-color: transparent;
+}
+
+
 .calculator{
     background-color: hsl(0, 0%, 40%);
-    display: flex;
     flex-direction: column;
     width: 200px;
+    border-radius: 5px ;
+    margin-top: 50px;
 }
 
 .display{
